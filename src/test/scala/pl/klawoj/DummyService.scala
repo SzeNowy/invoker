@@ -8,9 +8,9 @@ trait DummyService {
   private[this] val r = scala.util.Random
   private[this] val deviceIdToLastSeqMap = new ConcurrentHashMap[Int, Int]
 
-  private[this] var _itemsHandled = new AtomicInteger(0)
+  private[this] val _itemsHandled = new AtomicInteger(0)
 
-  def itemsHandled = _itemsHandled.get()
+  def itemsHandled: Int = _itemsHandled.get()
 
   def handleMessage(task: DeviceTask): Unit = {
     ensureProperInvocationOrder(task)

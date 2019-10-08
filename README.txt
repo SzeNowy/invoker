@@ -13,8 +13,8 @@ W oczywisty sposób, zachowuje to kolejność obsługi dla każdego urządzenia
 
 ZADANIE:
 
-Niestety ta implementacja jest za wolna. W zadaniu chodzi o modyfikację wyłącznie pliku Invoker.scala aby była szybsza.
-(Ewentualnie dozwolone jest dodawanie zależności do build.sbt)
+Niestety ta implementacja jest za wolna. Należy zmodyfikować plik Invoker.scala aby była szybsza.
+(Można też dodawać inne pliki, ale nie nalezy modyfikować pozostałych istniejących plików, dozwolone jest też dodawanie zależności do build.sbt)
 W pliku InvokerTest.scala są sprawdzane dwie właściwości Invoker`a
 1) To czy przetwarza on wszystkie zadania i to w dobrej kolejnosci dla każdego z urządzeń.
 2) To czy jest w stanie przetworzyć wszystkie zadania w zadanym czasie
