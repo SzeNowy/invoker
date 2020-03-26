@@ -11,7 +11,7 @@ trait DummyQueue {
   val queue: mutable.Queue[DeviceTask] = queueSource.to[mutable.Queue]
 }
 object DummyQueue {
-  private val nrOfDevices = 3
+  private val nrOfDevices = 7
   private val nrOfMessages = 100
   private val queueSource = Range(0, nrOfMessages).map(idx => DeviceTask(idx % nrOfDevices, idx / nrOfDevices, new Object))
 }

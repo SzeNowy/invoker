@@ -30,7 +30,7 @@ class InvokerTest
     val t1 = System.nanoTime()
     val elapsed = Duration.ofNanos(t1 - t0)
     println(s"Elapsed time: $elapsed")
-    assert(elapsed.getSeconds < seconds)
+    assert(elapsed.toMillis <= seconds * 1000)
   }
 
 }
