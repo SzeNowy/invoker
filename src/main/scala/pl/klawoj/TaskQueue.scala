@@ -1,7 +1,9 @@
 package pl.klawoj
 
+import java.util.concurrent.ConcurrentHashMap
+
 import scala.collection.mutable
 
 trait TaskQueue {
-  val queue: mutable.Queue[DeviceTask]
+  var queues: Map[Int, mutable.Queue[DeviceTask]]
 }
